@@ -1,6 +1,6 @@
-
-
-import info from "../fixtures/userInfo.json"
+import info from "../fixtures/userInfo.json";
+import {randomizer} from "../helpers/randomizer";
+info.email = randomizer.randomizeEmail(info.email);
 
 describe('SignUp Page', () => {
 
