@@ -2,29 +2,23 @@
 
 import info from "../fixtures/userInfo.json"
 
-describe('SignUp Page', function() {
+describe('SignUp Page', () => {
 
- /* before( function() {
-    cy.fixture('userInfo').then( function (data) {
-      info=data;
-    })
-  });*/
-
-
-  it('Visit SignUp page', function() {
+  it('Visit SignUp page', () => {
     cy.visit("/");
     cy.get('#user').should("exist");
     cy.get("a[href='/signup']").click();
     cy.get('#first-name').should("exist");
   })
 
-  it('SignUp a new user', function() {
+  it('SignUp a new user', () => {
 
     cy.get('#first-name').should("exist");
     cy.get('#first-name').type(info.firstName);
     cy.get('#last-name').type(info.lastName);
     cy.get('#email').type(info.email);
     cy.get('#password').type(info.password);
-    
+    cy.get('.btn').should("be.enabled").click()
+    cy.get('.text-success').should("exist")
   })
 })
