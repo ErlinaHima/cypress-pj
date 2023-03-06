@@ -1,0 +1,30 @@
+.pagination {
+  --bs-pagination-bg: var(--bs-gray-dark);
+  --bs-pagination-color: var(--bs-gray-400);
+  --bs-pagination-border-color: var(--bs-gray-dark);
+
+  --bs-pagination-active-bg: var(--bs-green);
+  --bs-pagination-active-border-color: var(--bs-green);
+
+  --bs-pagination-hover-bg: var(--bs-black);
+  --bs-pagination-hover-color: var(--bs-gray);
+  --bs-pagination-hover-border-color: var(--bs-black);
+
+  --bs-pagination-disabled-bg: var(--bs-gray);
+  --bs-pagination-disabled-color: var(--bs-white);
+  --bs-pagination-disabled-border-color: var(--bs-gray);
+
+
+}
+
+.btn-primary {
+  --bs-btn-disabled-bg: var(--bs-gray-600);
+  --bs-btn-disabled-border-color: var(--bs-gray-600);
+  --bs-btn-bg: var(--bs-teal);
+  --bs-btn-border-color: var(--bs-teal);
+}
+
+body {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
